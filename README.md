@@ -3,8 +3,12 @@
 [![CI](https://github.com/sidhu071205-cmyk/hash-identifier/actions/workflows/ci.yml/badge.svg)](https://github.com/sidhu071205-cmyk/hash-identifier/actions)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-beginner cyber security project
-
+[![Beginner Friendly](https://img.shields.io/badge/level-beginner%20friendly-brightgreen.svg)](#)
+[![Foundational](https://img.shields.io/badge/type-foundational-blueviolet.svg)](#)
+[![Cybersecurity](https://img.shields.io/badge/domain-cybersecurity-red.svg)](#)
+[![CTF Tool](https://img.shields.io/badge/use--case-CTF%20%7C%20Pentesting-orange.svg)](#)
+[![CLI Tool](https://img.shields.io/badge/interface-CLI-lightgrey.svg)](#)
+[![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-success.svg)](#)
 
 **Ever found a mystery hash string and had no idea what algorithm made it?** This tool figures it out for you — instantly.
 
