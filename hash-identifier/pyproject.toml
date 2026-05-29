@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+where =["src"]
+include = ["hash_identifier*"]
+
+[project]
+name = "hash-identifier"
+version = "1.0.0"
+description = "Identify hash formats by prefix, length, and shape — with confidence ranking."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["cybersecurity", "hashing", "forensics", "ctf", "password-cracking"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+
+dependencies = []                        # zero mandatory deps — pure stdlib
+
+[project.optional-dependencies]
+color = ["rich>=13.0"]
+dev   = ["rich>=13.0", "pytest>=8.0", "pytest-cov"]
+
+[project.scripts]
+hash-identifier ="hash_identifier.__main__:main"
+
+[project.urls]
+Homepage   = "https://github.com/yourusername/hash-identifier"
+Issues     = "https://github.com/yourusername/hash-identifier/issues"
+
+[tool.pytest.ini_options]
+testpaths   = ["tests"]
+addopts     = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["hash_identifier"]
+
+[tool.coverage.report]
+show_missing = true
+
